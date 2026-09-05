@@ -13,7 +13,7 @@ api_hash = os.environ.get("API_HASH", "")
 session_string = os.environ.get("SESSION_STRING", "")
 
 KEYWORDS = ["يساعدني","يحل", "يحِل", "ابغى", "يسوي", "أبغى", "يساعد"]
-ALERT_TARGET = os.environ.get("ALERT_TARGET", "Shaher8642") # يمكن تغييرها لتكون متغير بيئة أيضاً
+ALERT_TARGET = os.environ.get("ALERT_TARGET", "abdualrzaq") # يمكن تغييرها لتكون متغير بيئة أيضاً
 
 # استخدام StringSession إذا كانت متوفرة، وإلا فابدأ جلسة جديدة
 client = TelegramClient(StringSession(session_string) if session_string else None, api_id, api_hash)
